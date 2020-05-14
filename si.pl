@@ -97,7 +97,7 @@ foreach $filename (@total_files) {
 	$start=0;
 	$capture_coord="";
 	foreach $line (@sentences) {
-		if ($line=~/Input orientation:/) {$start=1;}
+		if ($line=~/Standard orientation:/) {$start=1;}
 		if ($start>0 && $start<7) {$start++;}
 		if ($start>=7) {
 			if ($line!~/------------------------/)
